@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
 <section>
     <div class="container">
         <header class="major">
@@ -11,14 +13,17 @@ layout: default
         <section class="post-content">
             {{ content }}
         </section>
-        
+        </div>
+    </section>
+</article>
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
+      
         <footer>
             {% if page.previous %}
             <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
             {% if page.next %}
             <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
         </footer>
-
-    </div>
-
-</section>
