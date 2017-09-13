@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section id="one" >
+<!-- <section id="one" >
     <div class="container">
         {% for post in site.posts limit:1 %}
             <article>
@@ -20,15 +20,20 @@ layout: default
             </article>
         {% endfor %}
     </div>
-</section>
+</section>-->
 <section>
     <div class="container">
+            <header class="major">
+                <h2>Blog</h2>
+            </header>
+                <p>Blogging about all the good stuff, right here.</p>
         <div class="features">
-        {% for post in site.posts offset:1 %}
+        {% for post in site.posts %}
             <article>
                 <section class="excerpt">
                 <header>
                     <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+                      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
                 </header>
                 
                     {{ post.content | truncatewords: 30 }}
