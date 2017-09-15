@@ -20,11 +20,13 @@ description: > # this means to ignore newlines until "baseurl:"
   Writing about religious studies and being vegan in the academy. 
 baseurl: "/vegan-academics" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-#respository: "mendelkranz/vegan-academics"
+respository: "mendelkranz/vegan-academics"
 twitter_username: mendelkranz
 github_username:  mendelkranz
 
-
+sass:
+    sass_dir: _sass
+    style: compressed
 
 # Disqus Comments
 disqus:
