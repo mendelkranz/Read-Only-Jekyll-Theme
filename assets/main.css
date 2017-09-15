@@ -1,15 +1,14 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-@import 
-  "mixins";
-  "vars";
-  "skel";
-  "style-large";
-  "style-medium";
-  "style-small";
-  "style-xlarge";
-  "style-xsmall";
-  "style";
-  "font-awesome.min";
+@import "mixins";
+@import "vars";
+@import "skel";
+@import "style-large";
+@import "style-medium";
+@import "style-small";
+@import "style-xlarge";
+@import "style-xsmall";
+@import "style";
+@import "font-awesome.min";
   
