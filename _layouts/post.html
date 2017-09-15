@@ -15,7 +15,7 @@ layout: default
         </section>
         </div>
     </section>
-</article>
+
 
       
         <footer>
@@ -25,6 +25,9 @@ layout: default
             <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
         </footer>
 
-    {% if site.disqus.shortname %}
+{% if site.disqus.shortname %}
     {% include disqus_comments.html %}
-    {% endif %}
+  {% endif %}
+
+  </article>
+  
