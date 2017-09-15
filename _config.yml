@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Two wannabee academics who are mostly/almost vegan.
   Writing about religious studies and being vegan in the academy. 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "mendelkranz.github.io" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: mendelkranz
 github_username:  mendelkranz
 
