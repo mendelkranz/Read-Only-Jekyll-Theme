@@ -5,14 +5,17 @@
             <h1 id="logo"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title | escape }}</a></h1>
             <p>{{ site.description }}</p>
         </header>
-        <nav id="nav">
-            <ul>
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/About">About Us</a></li>
-                <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-               <li><p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
-            </ul>
-        </nav>
+<nav id="nav">
+      <ul>
+        {% for page in site.pages %} {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %} {% endfor %}
+        <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+      </ul>
+      </li>
+      </ul>
+    </nav>
+      
         <footer>
             <ul class="icons">
                 <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
