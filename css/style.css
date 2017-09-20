@@ -462,16 +462,9 @@
 		position: relative;
 	}
 
-		.image.emoji {
-			border-radius: 5px;
-			border: 0;
-			display: inline-block;
-			position: relative;
-		}
-
 		.image img, .post-content img {
 			border-radius: 5px;
-			display: block;
+			/*display: block;*/
 		}
 
 		.image.left {
@@ -487,13 +480,13 @@
 		}
 
 		.image.fit, .post-content img {
-			display: block;
-			margin: 0 0 2.25em 0;
+			/*display: block;*/
+			/*margin: 0 0 2.25em 0;*/
 			max-width: 100%;
 		}
 
 			.image.fit img {
-				display: block;
+				/*display: block;*/
 				max-width: 100%;
 			}
 
