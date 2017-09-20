@@ -43,8 +43,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-emoji:
-  src: "/assets/images/emoji"  
+#emoji:
+#  src: "/assets/images/emoji"  
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
