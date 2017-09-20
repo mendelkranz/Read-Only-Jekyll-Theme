@@ -1,6 +1,7 @@
 ---
 layout: post
 author: Mendel Kranz
+category: testing
 ---
 
 ![this is the caption]({{ site.baseurl }}/images/200_s.gif)
