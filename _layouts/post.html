@@ -7,23 +7,23 @@ layout: default
     <div class="container">
         <header class="major">
             <h2>{{ page.title }}</h2>
-            </header>
-                <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if post %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-  {% endif %}
-  {% for category in categories %} • 
-  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}</p>
+        </header>
+            <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if post %}
+            {% assign categories = post.categories %}
+            {% else %}
+            {% assign categories = page.categories %}
+            {% endif %}
+            {% for category in categories %} • 
+            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}</p>
         
 
         <section class="post-content">
             {{ content }}
         </section>
-        </div>
-    </section>
+    </div>
+</section>
 
 
       
@@ -34,11 +34,13 @@ layout: default
             <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
         </footer>
 
+    <div class="container">
        <section>
         {% if site.disqus.shortname %}
           {% include disqus_comments.html %}
         {% endif %}
       </section>
+    </div>
 
   </article>
   
