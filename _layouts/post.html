@@ -34,9 +34,11 @@ layout: default
             <a href="{{ page.next.url }}" class="float-right">Next post &rarr;</a> {% endif %}
         </footer>
 
-{% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
+       <section>
+        {% if site.disqus.shortname %}
+          {% include disqus_comments.html %}
+        {% endif %}
+      </section>
 
   </article>
   
